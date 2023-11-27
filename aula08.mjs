@@ -1,9 +1,11 @@
-class Car{
+export default class Car{
     marca;
     cor;
     consumo = 14;
   
-    constructor(consumo) {
+    constructor(marca, cor, consumo) {
+      this.marca = marca;
+      this.cor = cor;
       this.consumo = consumo;
     };
   
@@ -13,6 +15,3 @@ class Car{
      }
   
   }
-  
-  const uno = new Car(17);
-  uno.rodar(150,5.39);

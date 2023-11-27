@@ -1,3 +1,5 @@
+import Car from './aula08.mjs';
+
 class Pessoa {
     nome;
     peso;
@@ -32,5 +34,11 @@ class Pessoa {
   }
   
   
-  const mozao = new Pessoa("João", 105,1.70);
-  mozao.calcularImc();
+  const novaPessoa = new Pessoa("Gustavo", 88,1.70);
+  novaPessoa.calcularImc();
+
+  const meuCarro = new Car('Toyota ', 'Preto', 15);
+  console.log(`Meu carro é um ${meuCarro.marca} ${meuCarro.cor}.`);
+  meuCarro.rodar(100,5.5);
+
+  
